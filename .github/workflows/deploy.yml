@@ -68,7 +68,7 @@ jobs:
             docker run -d \
               --name $CONTAINER_NAME \
               --restart unless-stopped \
-              -v $DATA_DIR:/app \
+              -v $DATA_DIR:/app/data \
               -e BOT_TOKEN="$BOT_TOKEN" \
               -e ADMIN_TELEGRAM_USER_ID="$ADMIN_TELEGRAM_USER_ID" \
               -e ADMIN_EMAIL="$ADMIN_EMAIL" \
@@ -117,7 +117,7 @@ jobs:
             docker run -d \
               --name $CONTAINER_NAME \
               --restart unless-stopped \
-              -v $DATA_DIR:/app \
+              -v $DATA_DIR:/app/data \
               -e BOT_TOKEN="$BOT_TOKEN" \
               -e ADMIN_TELEGRAM_USER_ID="$ADMIN_TELEGRAM_USER_ID" \
               -e ADMIN_EMAIL="$ADMIN_EMAIL" \
